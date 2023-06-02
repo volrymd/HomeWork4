@@ -5,6 +5,10 @@ Console.WriteLine ("Введите первое число: ");
 int a = int.Parse(Console.ReadLine()!);
 Console.WriteLine ("Введите второе число: ");
 int b = int.Parse(Console.ReadLine()!);
+
+void Degree ()
+{
+    
 int c = a;
 if (b < 1)
 {
@@ -14,3 +18,6 @@ if (b < 1)
 for (int i = 2; i <= b; i++)
     a = a*c;
 Console.WriteLine($"{c} в степени {b} = {a}");
+}
+
+Degree ();
