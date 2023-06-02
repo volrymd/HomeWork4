@@ -2,11 +2,17 @@
 
 Console.Clear ();
 Console.WriteLine ("Введите число: ");
-int a = int.Parse(Console.ReadLine()!);
-int result = 0;
+int b = int.Parse(Console.ReadLine()!);
+
+int Method (int a)
+{int result = 0;
 while (a != 0)
 {
     result = result + a % 10;
     a = a /10;
 }
-Console.WriteLine($"Cумма цифр  числе: {result} ");
+return result;
+}
+
+int res = Method (b);
+Console.WriteLine($"Cумма цифр в числе: {res} ");
